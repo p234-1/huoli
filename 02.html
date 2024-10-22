@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性</title>
+    <script>
+        let flag = 1;
+        function oopp() {
+            let myImg = document.getElementsByTagName("img")[0];
+            if (flag) {
+                myImg.setAttribute("src", "1.jpg");
+                flag = 0;
+            }
+            else {
+                myImg.setAttribute("src", "11.png");
+                flag = 1;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <img src="11.png" onclick="oopp()" alt="">
+</body>
+
+</html>
